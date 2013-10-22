@@ -1,7 +1,7 @@
 {
-    "name": "mikecao/flight",
-    "description": "Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications.",
-    "homepage": "http://flightphp.com",
+    "name": "mmcp/flight",
+    "description": "Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications. This package has minor changes required for mmcp projects.",
+    "homepage": "https://github.com/mmcp-php/flight",
     "license": "MIT",
     "authors": [
         {
@@ -9,6 +9,11 @@
             "email": "mike@mikecao.com",
             "homepage": "http://www.mikecao.com/",
             "role": "Original Developer"
+        },
+        {
+            "name": "Mark Morley",
+            "email": "markmorley73@gmail.com",
+            "role": "MMCP Dev"
         }
     ],
     "require": {
