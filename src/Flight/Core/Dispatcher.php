@@ -6,7 +6,7 @@
  * @license     MIT, http://flightphp.com/license
  */
 
-namespace flight\core;
+namespace Flight\Core;
 
 /**
  * The Dispatcher class is responsible for dispatching events. Events

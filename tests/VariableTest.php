@@ -12,12 +12,12 @@ require_once __DIR__.'/../flight/autoload.php';
 class VariableTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var \flight\Engine
+     * @var \Flight\Engine
      */
     private $app;
 
     function setUp() {
-        $this->app = new \flight\Engine();
+        $this->app = new \Flight\Engine();
     }
     // Set and get a variable
     function testSetAndGet() {

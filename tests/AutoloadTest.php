@@ -12,12 +12,12 @@ require_once __DIR__.'/../flight/autoload.php';
 class AutoloadTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var \flight\Engine
+     * @var \Flight\Engine
      */
     private $app;
     
     function setUp() {
-        $this->app = new \flight\Engine();
+        $this->app = new \Flight\Engine();
         $this->app->path(__DIR__.'/classes');
     }
 

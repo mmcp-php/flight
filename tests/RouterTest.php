@@ -12,18 +12,18 @@ require_once __DIR__.'/../flight/autoload.php';
 class RouterTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var \flight\net\Router
+     * @var \Flight\Net\Router
      */
     private $router;
 
     /**
-     * @var \flight\net\Request
+     * @var \Flight\Net\Request
      */
     private $request;
     
     function setUp(){
-        $this->router = new \flight\net\Router();
-        $this->request = new \flight\net\Request();
+        $this->router = new \Flight\Net\Router();
+        $this->request = new \Flight\Net\Request();
     }
 
     // Simple output

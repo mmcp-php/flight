@@ -6,7 +6,7 @@
  * @license     MIT, http://flightphp.com/license
  */
 
-namespace flight\core;
+namespace Flight\Core;
 
 /**
  * The Loader class is responsible for loading objects. It maintains

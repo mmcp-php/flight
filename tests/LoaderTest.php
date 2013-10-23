@@ -11,12 +11,12 @@ require_once 'PHPUnit/Autoload.php';
 class LoaderTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var \flight\core\Loader
+     * @var \Flight\Core\Loader
      */
     private $loader;
 
     function setUp(){
-        $this->loader = new \flight\core\Loader();
+        $this->loader = new \Flight\Core\Loader();
         $this->loader->autoload(true, __DIR__.'/classes');
     }
 

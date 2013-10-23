@@ -35,12 +35,12 @@ class Flight {
         if (!$initialized) {
             require_once __DIR__.'/autoload.php';
 
-            self::$engine = new \flight\Engine();
+            self::$engine = new \Flight\Engine();
 
             $initialized = true;
         }
 
-        return \flight\core\Dispatcher::invokeMethod(array(self::$engine, $name), $params);
+        return \Flight\Core\Dispatcher::invokeMethod(array(self::$engine, $name), $params);
     }
 }
 

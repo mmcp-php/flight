@@ -12,7 +12,7 @@ require_once __DIR__.'/../flight/autoload.php';
 class RequestTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var \flight\net\Request
+     * @var \Flight\Net\Request
      */
     private $request;
 
@@ -26,7 +26,7 @@ class RequestTest extends PHPUnit_Framework_TestCase
         putenv('HTTPS=on');
         $_SERVER['HTTP_X_FORWARDED_FOR'] = '32.32.32.32';
 
-        $this->request = new \flight\net\Request();
+        $this->request = new \Flight\Net\Request();
     }
 
     function testDefaults() {
@@ -50,7 +50,7 @@ class RequestTest extends PHPUnit_Framework_TestCase
     function testSubdirectory() {
         putenv('SCRIPT_NAME=/subdir/index.php');
 
-        $request = new \flight\net\Request();
+        $request = new \Flight\Net\Request();
 
         $this->assertEquals('/subdir', $request->base);
     }
@@ -58,7 +58,7 @@ class RequestTest extends PHPUnit_Framework_TestCase
     function testQueryParameters() {
         putenv('REQUEST_URI=/page?id=1&name=bob');
 
-        $request = new \flight\net\Request();
+        $request = new \Flight\Net\Request();
 
         $this->assertEquals('/page?id=1&name=bob', $request->url);
         $this->assertEquals(1, $request->query->id);
@@ -73,7 +73,7 @@ class RequestTest extends PHPUnit_Framework_TestCase
         $_COOKIE['q'] = 1;
         $_FILES['q'] = 1;
 
-        $request = new \flight\net\Request();
+        $request = new \Flight\Net\Request();
 
         $this->assertEquals(1, $request->query->q);
         $this->assertEquals(1, $request->query->id);

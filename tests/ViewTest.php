@@ -12,12 +12,12 @@ require_once __DIR__.'/../flight/autoload.php';
 class ViewTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var \flight\template\View
+     * @var \Flight\Template\View
      */
     private $view;
 
     function setUp(){
-        $this->view = new \flight\template\View();
+        $this->view = new \Flight\Template\View();
         $this->view->path = __DIR__.'/views';
     }
 

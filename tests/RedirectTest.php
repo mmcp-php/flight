@@ -12,7 +12,7 @@ require_once __DIR__.'/../flight/autoload.php';
 class RedirectTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var \flight\Engine
+     * @var \Flight\Engine
      */
     private $app;
 
@@ -27,7 +27,7 @@ class RedirectTest extends PHPUnit_Framework_TestCase
     function setUp() {
         putenv('SCRIPT_NAME=/subdir/index.php');
 
-        $this->app = new \flight\Engine();
+        $this->app = new \Flight\Engine();
         $this->app->set('flight.base_url', '/testdir');
     }
 

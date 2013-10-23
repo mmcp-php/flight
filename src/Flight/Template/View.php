@@ -6,7 +6,7 @@
  * @license     MIT, http://flightphp.com/license
  */
 
-namespace flight\template;
+namespace Flight\Template;
 
 /**
  * The View class represents output to be displayed. It provides

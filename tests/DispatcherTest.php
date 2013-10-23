@@ -12,12 +12,12 @@ require_once __DIR__.'/classes/Hello.php';
 class DispatcherTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var \flight\core\Dispatcher
+     * @var \Flight\Core\Dispatcher
      */
     private $dispatcher;
 
     function setUp(){
-        $this->dispatcher = new \flight\core\Dispatcher();
+        $this->dispatcher = new \Flight\Core\Dispatcher();
     }
 
     // Map a closure

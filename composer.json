@@ -1,6 +1,6 @@
 {
     "name": "mmcp/flight",
-    "description": "Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications. This package has minor changes required for mmcp projects.",
+    "description": "Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications. This package has been made PSR-0 compliant & composer friendly aswell as some minor changes required for mmcp projects.",
     "homepage": "https://github.com/mmcp-php/flight",
     "license": "MIT",
     "authors": [
@@ -20,6 +20,6 @@
         "php": ">=5.3.0"
     },
     "autoload": {
-        "files": [ "flight/Flight.php" ]
+            "psr-0": { "Flight": "src/" }
     }
 }

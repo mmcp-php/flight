@@ -6,7 +6,7 @@
  * @license     MIT, http://flightphp.com/license
  */
 
-namespace flight\util;
+namespace Flight\Util;
 
 /**
  * The Collection class allows you to access a set of data

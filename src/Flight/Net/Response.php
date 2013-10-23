@@ -6,7 +6,7 @@
  * @license     MIT, http://flightphp.com/license
  */
 
-namespace flight\net;
+namespace Flight\Net;
 
 /**
  * The Response class represents an HTTP response. The object

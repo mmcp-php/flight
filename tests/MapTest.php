@@ -13,12 +13,12 @@ require_once __DIR__.'/classes/Hello.php';
 class MapTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var \flight\Engine
+     * @var \Flight\Engine
      */
     private $app;
 
     function setUp() {
-        $this->app = new \flight\Engine();
+        $this->app = new \Flight\Engine();
     }
 
     // Map a closure
